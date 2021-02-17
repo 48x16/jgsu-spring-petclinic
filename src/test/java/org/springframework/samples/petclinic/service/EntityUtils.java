@@ -46,6 +46,7 @@ public abstract class EntityUtils {
 			if (entity.getId() == entityId && entityClass.isInstance(entity)) {
 				return entity;
 			}
+
 		}
 		throw new ObjectRetrievalFailureException(entityClass, entityId);
 	}
